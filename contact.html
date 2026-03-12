@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Contact — DoneServicesPlus | Services à domicile Achères, Île-de-France
+    </title>
+    <meta
+      name="description"
+      content="Contactez DoneServicesPlus pour vos besoins en aide ménagère ou auxiliaire de vie à Achères et en Île-de-France. Téléphone : 06 52 73 69 60. Réponse sous 24h."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://doneservicesplus.fr/contact.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.5s ease,
+          transform 0.5s ease;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .contact-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 24px;
+        background: var(--white);
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-card);
+        transition:
+          transform var(--transition),
+          border-color var(--transition);
+        text-decoration: none;
+      }
+      .contact-card:hover {
+        transform: translateY(-4px);
+        border-color: var(--blue);
+      }
+      .contact-card-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: var(--radius-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .contact-card h3 {
+        color: var(--dark);
+        margin-bottom: 4px;
+        font-size: 1rem;
+      }
+      .contact-card p {
+        margin: 0;
+        font-size: 0.88rem;
+      }
+      .contact-card strong {
+        color: var(--dark);
+        font-size: 1rem;
+      }
+
+      .success-msg {
+        display: none;
+        background: #e8f8f0;
+        border: 2px solid #27ae60;
+        border-radius: var(--radius-sm);
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .success-msg.show {
+        display: block;
+      }
+      .success-msg p {
+        color: #1e8449;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .map-embed {
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow-card);
+        border: 1px solid var(--border);
+      }
+      .map-embed iframe {
+        display: block;
+        width: 100%;
+        height: 320px;
+      }
+
+      .horaires-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .horaire-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 14px;
+        background: var(--grey-light);
+        border-radius: var(--radius-sm);
+        font-size: 0.88rem;
+      }
+      .horaire-row span:first-child {
+        color: var(--grey);
+      }
+      .horaire-row span:last-child {
+        color: var(--dark);
+        font-weight: 600;
+      }
+      .horaire-row.dispo span:last-child {
+        color: var(--blue);
+      }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+  <link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico">
+</head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">D</div>
+            <div class="logo-text">
+              <span class="logo-name">DoneServicesPlus</span>
+              <span class="logo-tagline"
+                >Services à domicile · Île-de-France</span
+              >
+            </div>
+          </a>
+          <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="nos-services.html">Nos services</a>
+            <a href="zone-intervention-ile-de-france.html"
+              >Zone d'intervention</a
+            >
+            <a href="credit-impot-50-services-personne.html">Crédit d'impôt</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="devis.html" class="btn btn-orange">Devis gratuit</a>
+          </nav>
+          <button class="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-menu">
+        <a href="index.html">Accueil</a>
+        <a href="nos-services.html">Nos services</a>
+        <a href="aide-menagere-acheres.html">Aide ménagère</a>
+        <a href="auxiliaire-de-vie-acheres.html">Auxiliaire de vie</a>
+        <a href="zone-intervention-ile-de-france.html">Zone d'intervention</a>
+        <a href="credit-impot-50-services-personne.html">Crédit d'impôt 50 %</a>
+        <a href="recrutement.html">Recrutement</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="devis.html" class="btn btn-orange">Devis gratuit</a>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Accueil</a><span>›</span><span>Contact</span>
+        </nav>
+        <h1>Nous contacter</h1>
+        <p>
+          Vous avez une question, un besoin ou souhaitez un devis personnalisé ?
+          Notre équipe est à votre écoute. Réponse garantie sous 24h.
+        </p>
+      </div>
+    </section>
+
+    <!-- CARTES CONTACT RAPIDE -->
+    <section class="section-sm" style="background: var(--grey-light)">
+      <div class="container">
+        <div class="grid-3" style="gap: 16px">
+          <a
+            href="tel:+33652736960"
+            class="contact-card"
+            onclick="trackEvent('clic_tel_contact')"
+          >
+            <div
+              class="contact-card-icon"
+              style="background: var(--orange-light)"
+            >
+              <span class="mi" style="font-size: 1.8rem; color: var(--orange)"
+                >phone</span
+              >
+            </div>
+            <div>
+              <h3>Nous appeler</h3>
+              <strong>06 52 73 69 60</strong>
+              <p>Du lundi au samedi, 8h–20h</p>
+            </div>
+          </a>
+
+          <a
+            href="mailto:doneservicesplus.com@gmail.com"
+            class="contact-card"
+            onclick="trackEvent('clic_mail_contact')"
+          >
+            <div
+              class="contact-card-icon"
+              style="background: var(--blue-light)"
+            >
+              <span class="mi" style="font-size: 1.8rem; color: var(--blue)"
+                >mail</span
+              >
+            </div>
+            <div>
+              <h3>Nous écrire</h3>
+              <strong>doneservicesplus.com@gmail.com</strong>
+              <p>Réponse sous 24h ouvrées</p>
+            </div>
+          </a>
+
+          <a
+            href="devis.html"
+            class="contact-card"
+            onclick="trackEvent('clic_devis_contact')"
+          >
+            <div
+              class="contact-card-icon"
+              style="background: var(--orange-light)"
+            >
+              <span class="mi" style="font-size: 1.8rem; color: var(--orange)"
+                >calculate</span
+              >
+            </div>
+            <div>
+              <h3>Devis en ligne</h3>
+              <strong>Simulateur gratuit</strong>
+              <p>Estimation immédiate avec crédit d'impôt</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE + INFOS -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2" style="gap: 50px; align-items: start">
+          <!-- Formulaire -->
+          <div>
+            <span class="badge badge-blue" style="margin-bottom: 16px"
+              ><span class="mi mi-sm">send</span> Message</span
+            >
+            <h2 style="margin-bottom: 8px">Envoyez-nous un message</h2>
+            <p style="margin-bottom: 28px">
+              Pour une demande de devis, une question sur nos services ou toute
+              autre information. Nous vous répondrons rapidement.
+            </p>
+
+            <div
+              style="
+                background: var(--white);
+                border-radius: var(--radius);
+                padding: 32px;
+                box-shadow: var(--shadow-card);
+                border: 1px solid var(--border);
+              "
+            >
+              <form id="contact-form" onsubmit="envoyerMessage(event)">
+                <div class="grid-2" style="gap: 14px">
+                  <div class="form-group">
+                    <label>Prénom *</label>
+                    <input
+                      type="text"
+                      name="user_prenom"
+                      required
+                      placeholder="Marie"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Nom *</label>
+                    <input
+                      type="text"
+                      name="user_nom"
+                      required
+                      placeholder="Dupont"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Email *</label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    required
+                    placeholder="marie.dupont@email.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Téléphone</label>
+                  <input
+                    type="tel"
+                    name="user_phone"
+                    placeholder="06 12 34 56 78"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Sujet de votre demande</label>
+                  <select name="sujet">
+                    <option value="Demande de devis">Demande de devis</option>
+                    <option value="Question sur les services">
+                      Question sur les services
+                    </option>
+                    <option value="Crédit d'impôt">Crédit d'impôt</option>
+                    <option value="Zone d'intervention">
+                      Zone d'intervention
+                    </option>
+                    <option value="Recrutement">Recrutement</option>
+                    <option value="Autre">Autre</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Votre message *</label>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Décrivez votre besoin, votre situation, vos questions..."
+                  ></textarea>
+                </div>
+
+                <div class="form-checkbox" style="margin-bottom: 20px">
+                  <input type="checkbox" id="rgpd-contact" required />
+                  <label for="rgpd-contact">
+                    J'accepte que mes données soient utilisées pour traiter ma
+                    demande, conformément à la
+                    <a href="mentions-legales.html#confidentialite"
+                      >politique de confidentialité</a
+                    >. *
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-blue"
+                  style="width: 100%"
+                  id="btn-contact"
+                >
+                  <span class="mi mi-sm" style="margin-right: 8px">send</span>
+                  Envoyer mon message
+                </button>
+              </form>
+
+              <div class="success-msg" id="success-contact">
+                <p>
+                  <span class="mi mi-sm">check_circle</span> Votre message a bien été envoyé !<br />Nous vous répondrons
+                  dans les 24h.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Infos + carte -->
+          <div>
+            <span class="badge badge-orange" style="margin-bottom: 16px"
+              ><span class="mi mi-sm">location_on</span> Où nous trouver</span
+            >
+            <h2 style="margin-bottom: 24px">Nos coordonnées</h2>
+
+            <!-- Infos -->
+            <div
+              style="
+                background: var(--white);
+                border-radius: var(--radius);
+                padding: 28px;
+                box-shadow: var(--shadow-card);
+                border: 1px solid var(--border);
+                margin-bottom: 24px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  gap: 14px;
+                  align-items: center;
+                  padding: 14px 0;
+                  border-bottom: 1px solid var(--border);
+                "
+              >
+                <span
+                  class="mi"
+                  style="
+                    color: var(--orange);
+                    font-size: 1.5rem;
+                    flex-shrink: 0;
+                  "
+                  >location_on</span
+                >
+                <div>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: var(--grey);
+                      margin-bottom: 2px;
+                    "
+                  >
+                    Siège social
+                  </p>
+                  <strong style="color: var(--dark)"
+                    >Achères, 78260 Yvelines</strong
+                  >
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  gap: 14px;
+                  align-items: center;
+                  padding: 14px 0;
+                  border-bottom: 1px solid var(--border);
+                "
+              >
+                <span
+                  class="mi"
+                  style="
+                    color: var(--orange);
+                    font-size: 1.5rem;
+                    flex-shrink: 0;
+                  "
+                  >phone</span
+                >
+                <div>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: var(--grey);
+                      margin-bottom: 2px;
+                    "
+                  >
+                    Téléphone
+                  </p>
+                  <a
+                    href="tel:+33652736960"
+                    style="
+                      color: var(--dark);
+                      font-weight: 700;
+                      font-size: 1.05rem;
+                    "
+                    >06 52 73 69 60</a
+                  >
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  gap: 14px;
+                  align-items: center;
+                  padding: 14px 0;
+                  border-bottom: 1px solid var(--border);
+                "
+              >
+                <span
+                  class="mi"
+                  style="
+                    color: var(--orange);
+                    font-size: 1.5rem;
+                    flex-shrink: 0;
+                  "
+                  >mail</span
+                >
+                <div>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: var(--grey);
+                      margin-bottom: 2px;
+                    "
+                  >
+                    Email
+                  </p>
+                  <a
+                    href="mailto:doneservicesplus.com@gmail.com"
+                    style="
+                      color: var(--dark);
+                      font-weight: 600;
+                      font-size: 0.95rem;
+                    "
+                    >doneservicesplus.com@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div style="padding-top: 14px">
+                <p
+                  style="
+                    font-size: 0.82rem;
+                    color: var(--grey);
+                    margin-bottom: 8px;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                  "
+                >
+                  <span class="mi mi-sm">schedule</span> Horaires de
+                  disponibilité
+                </p>
+                <div class="horaires-grid">
+                  <div class="horaire-row dispo">
+                    <span>Lun – Ven</span><span>8h – 20h</span>
+                  </div>
+                  <div class="horaire-row dispo">
+                    <span>Samedi</span><span>9h – 18h</span>
+                  </div>
+                  <div class="horaire-row">
+                    <span>Dimanche</span><span>Urgences</span>
+                  </div>
+                  <div class="horaire-row dispo">
+                    <span>Jours fériés</span><span>Sur demande</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carte Google Maps -->
+            <div class="map-embed">
+              <iframe
+                src="https://maps.google.com/maps?q=Ach%C3%A8res+78260+Yvelines+France&output=embed&hl=fr&z=13"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="DoneServicesPlus — Achères, Yvelines"
+              >
+              </iframe>
+            </div>
+
+            <div class="info-box" style="margin-top: 16px">
+              <p>
+                <span class="mi mi-sm">map</span> Nous intervenons à domicile —
+                <strong>pas de réception sur place</strong>. Contactez-nous pour
+                fixer un rendez-vous téléphonique ou un rendez-vous chez vous.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo">
+              <div class="logo-icon">D</div>
+              <div class="logo-text">
+                <span class="logo-name">DoneServicesPlus</span
+                ><span class="logo-tagline">Services à domicile</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              Agence de services à domicile spécialisée en aide ménagère et
+              auxiliaire de vie. Basés à Achères, nous intervenons dans toute
+              l'Île-de-France.
+            </p>
+            <div class="footer-contact-item">
+              <span class="mi mi-sm">phone</span
+              ><a href="tel:+33652736960">06 52 73 69 60</a>
+            </div>
+            <div class="footer-contact-item">
+              <span class="mi mi-sm">mail</span
+              ><a href="mailto:doneservicesplus.com@gmail.com"
+                >doneservicesplus.com@gmail.com</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <span class="mi mi-sm">location_on</span
+              ><span>Achères, 78260 Yvelines</span>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Nos services</h4>
+            <ul>
+              <li><a href="aide-menagere-acheres.html">Aide ménagère</a></li>
+              <li><a href="aide-menagere-acheres.html">Repassage</a></li>
+              <li>
+                <a href="auxiliaire-de-vie-acheres.html">Auxiliaire de vie</a>
+              </li>
+              <li>
+                <a href="auxiliaire-de-vie-acheres.html">Aide à la toilette</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Informations</h4>
+            <ul>
+              <li><a href="a-propos.html">À propos</a></li>
+              <li>
+                <a href="zone-intervention-ile-de-france.html"
+                  >Zone d'intervention</a
+                >
+              </li>
+              <li>
+                <a href="credit-impot-50-services-personne.html"
+                  >Crédit d'impôt</a
+                >
+              </li>
+              <li><a href="recrutement.html">Recrutement</a></li>
+              <li><a href="devis.html">Devis gratuit</a></li>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Zones desservies</h4>
+            <p class="footer-villes">
+              Achères, Conflans-Sainte-Honorine, Poissy, Saint-Germain-en-Laye,
+              Maisons-Laffitte, Sartrouville, Argenteuil, Cergy et toute
+              l'Île-de-France.
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 DoneServicesPlus — Tous droits réservés</p>
+          <div style="display: flex; gap: 20px">
+            <a href="mentions-legales.html">Mentions légales</a
+            ><a href="mentions-legales.html#confidentialite">Confidentialité</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="cookie-banner">
+      <p>
+        Ce site utilise des cookies pour analyser le trafic.
+        <a href="mentions-legales.html#cookies">En savoir plus</a>
+      </p>
+      <button id="cookie-accept" class="btn btn-orange">J'accepte</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      (function () {
+        emailjs.init("YF8oEtOWBfCuu4Jn1");
+      })();
+
+      function envoyerMessage(e) {
+        e.preventDefault();
+        const btn = document.getElementById("btn-contact");
+        btn.textContent = "Envoi en cours...";
+        btn.disabled = true;
+
+        emailjs
+          .sendForm("service_saj58zc", "template_8r6ln5l", e.target)
+          .then(
+            function () {
+              document.getElementById("contact-form").style.display = "none";
+              document.getElementById("success-contact").classList.add("show");
+              trackEvent("contact_envoye");
+            },
+            function () {
+              btn.textContent = "Envoyer mon message";
+              btn.disabled = false;
+              alert(
+                "Erreur. Contactez-nous directement au 06 52 73 69 60 ou à doneservicesplus.com@gmail.com",
+              );
+            },
+          );
+      }
+    </script>
+  </body>
+</html>

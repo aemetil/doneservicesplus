@@ -1,0 +1,33 @@
+# Fichiers de documentation interne (ne pas publier)
+projet.md
+github_pages.md
+prix_services.md
+prix_service.md
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Variables d'environnement / secrets (si un jour utilisés)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (si tu installes des outils de dev un jour)
+node_modules/
+package-lock.json

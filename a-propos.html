@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>À propos de DoneServicesPlus — Agence de services à domicile à Achères</title>
+  <meta name="description" content="DoneServicesPlus, agence de services à domicile fondée à Achères. Notre mission : apporter aide ménagère et auxiliaire de vie de qualité en Île-de-France, avec professionnalisme et humanité.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://doneservicesplus.fr/a-propos.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity .5s ease,transform .5s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+
+    .valeur-big {
+      text-align: center;
+      padding: 36px 24px;
+      border-radius: var(--radius);
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .valeur-big:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+    .valeur-big .icon-wrap {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .valeur-big h3 { margin-bottom: 12px; color: var(--dark); }
+
+    .stat-big {
+      text-align: center;
+      padding: 30px;
+    }
+    .stat-big strong {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 6px;
+    }
+    .stat-big span {
+      color: var(--grey);
+      font-size: .9rem;
+    }
+
+    .citation {
+      background: var(--blue);
+      border-radius: var(--radius);
+      padding: 40px;
+      text-align: center;
+      position: relative;
+    }
+    .citation::before {
+      content: '"';
+      font-size: 6rem;
+      color: rgba(255,255,255,.1);
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .citation p {
+      color: rgba(255,255,255,.9);
+      font-size: 1.15rem;
+      font-style: italic;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 20px;
+    }
+    .citation cite {
+      color: var(--orange);
+      font-weight: 600;
+      font-size: .9rem;
+    }
+  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+  <link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">D</div>
+          <div class="logo-text">
+            <span class="logo-name">DoneServicesPlus</span>
+            <span class="logo-tagline">Services à domicile · Île-de-France</span>
+          </div>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="nos-services.html">Nos services</a>
+          <a href="zone-intervention-ile-de-france.html">Zone d'intervention</a>
+          <a href="credit-impot-50-services-personne.html">Crédit d'impôt</a>
+          <a href="a-propos.html" class="active">À propos</a>
+          <a href="contact.html">Contact</a>
+          <a href="devis.html" class="btn btn-orange">Devis gratuit</a>
+        </nav>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <a href="index.html">Accueil</a>
+      <a href="nos-services.html">Nos services</a>
+      <a href="aide-menagere-acheres.html">Aide ménagère</a>
+      <a href="auxiliaire-de-vie-acheres.html">Auxiliaire de vie</a>
+      <a href="zone-intervention-ile-de-france.html">Zone d'intervention</a>
+      <a href="credit-impot-50-services-personne.html">Crédit d'impôt 50 %</a>
+      <a href="recrutement.html">Recrutement</a>
+      <a href="a-propos.html" class="active">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="devis.html" class="btn btn-orange">Devis gratuit</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Accueil</a><span>›</span><span>À propos</span>
+      </nav>
+      <h1>À propos de DoneServicesPlus</h1>
+      <p>Une agence de services à domicile fondée à Achères, portée par une vision humaine et un engagement fort envers les personnes que nous accompagnons.</p>
+    </div>
+  </section>
+
+  <!-- NOTRE HISTOIRE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-img-split" style="gap:60px; align-items:center;">
+
+        <div>
+          <span class="badge badge-blue" style="margin-bottom:16px;"><span class="mi mi-sm">history</span> Notre histoire</span>
+          <h2>DoneServicesPlus, née d'une conviction profonde</h2>
+          <p style="margin:16px 0;">
+            DoneServicesPlus est une agence de services à domicile fondée à <strong>Achères (Yvelines)</strong>,
+            avec une ambition claire : offrir des services à la personne de <strong>qualité professionnelle</strong>,
+            accessibles à tous grâce au crédit d'impôt de 50 %.
+          </p>
+          <p style="margin-bottom:16px;">
+            Notre conviction : chaque personne mérite de pouvoir vivre chez elle dans les meilleures conditions,
+            entourée d'intervenants compétents, fiables et bienveillants.
+            Qu'il s'agisse d'aide ménagère, de repassage ou d'accompagnement pour les personnes âgées,
+            <strong>chaque prestation est réalisée avec le même niveau d'exigence et de soin</strong>.
+          </p>
+          <p>
+            Basée en Île-de-France, notre structure se développe progressivement pour couvrir davantage de communes
+            et répondre à une demande croissante en services à la personne de qualité.
+          </p>
+        </div>
+
+        <div class="section-img-wrap">
+          <img src="assets/images/assistance%20personnalis%C3%A9e_une%20jeune%20femme%20souriante%20remplisse%20des%20paperasse%20accompagn%C3%A9e%20d'une%20dame%20ag%C3%A9e.jpg"
+               alt="Assistance personnalisée DoneServicesPlus"
+               loading="eager">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CITATION -->
+  <section class="section-sm" style="background:var(--grey-light); padding:60px 0;">
+    <div class="container" style="max-width:800px;">
+      <div class="citation">
+        <p>Nous ne nous contentons pas de rendre un service. Nous créons un lien de confiance qui change vraiment la vie des personnes que nous accompagnons au quotidien.</p>
+        <cite>— L'équipe DoneServicesPlus</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="grid-4">
+        <div class="stat-big">
+          <strong>Achères</strong>
+          <span>Notre ville d'ancrage, au cœur des Yvelines</span>
+        </div>
+        <div class="stat-big">
+          <strong>50 %</strong>
+          <span>Crédit d'impôt sur toutes nos prestations</span>
+        </div>
+        <div class="stat-big">
+          <strong>IDF</strong>
+          <span>Zone d'intervention en expansion continue</span>
+        </div>
+        <div class="stat-big">
+          <strong>2</strong>
+          <span>Pôles d'expertise : ménage & auxiliaire de vie</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS VALEURS -->
+  <section class="section" style="background:var(--grey-light);">
+    <div class="container">
+      <div class="section-title">
+        <span class="badge badge-orange"><span class="mi mi-sm">favorite</span> Nos valeurs</span>
+        <h2>Ce qui nous guide au quotidien</h2>
+        <p>Nos valeurs ne sont pas des mots affichés sur un mur. Elles se traduisent concrètement dans chacune de nos interventions.</p>
+      </div>
+      <div class="grid-3">
+        <div class="valeur-big">
+          <div class="icon-wrap" style="background:var(--orange-light);">
+            <span class="mi" style="font-size:2rem; color:var(--orange);">handshake</span>
+          </div>
+          <h3>Confiance</h3>
+          <p>La confiance se gagne. Nous la construisons par la fiabilité, la ponctualité et la transparence dans chacune de nos interventions.</p>
+        </div>
+        <div class="valeur-big">
+          <div class="icon-wrap" style="background:var(--blue-light);">
+            <span class="mi" style="font-size:2rem; color:var(--blue);">volunteer_activism</span>
+          </div>
+          <h3>Bienveillance</h3>
+          <p>Chaque personne que nous accompagnons est unique. Nous adaptons notre approche avec douceur, patience et respect de son histoire.</p>
+        </div>
+        <div class="valeur-big">
+          <div class="icon-wrap" style="background:var(--orange-light);">
+            <span class="mi" style="font-size:2rem; color:var(--orange);">verified</span>
+          </div>
+          <h3>Professionnalisme</h3>
+          <p>Nos intervenants sont sélectionnés, formés et régulièrement évalués pour maintenir le plus haut niveau de qualité de service.</p>
+        </div>
+        <div class="valeur-big">
+          <div class="icon-wrap" style="background:var(--blue-light);">
+            <span class="mi" style="font-size:2rem; color:var(--blue);">shield</span>
+          </div>
+          <h3>Dignité</h3>
+          <p>Nous intervenons dans des moments intimes de la vie des personnes. Le respect absolu de leur dignité et de leur intimité est non négociable.</p>
+        </div>
+        <div class="valeur-big">
+          <div class="icon-wrap" style="background:var(--orange-light);">
+            <span class="mi" style="font-size:2rem; color:var(--orange);">people</span>
+          </div>
+          <h3>Lien social</h3>
+          <p>Nos intervenants sont souvent un lien social essentiel pour les personnes isolées. Nous encourageons cet aspect humain de notre métier.</p>
+        </div>
+        <div class="valeur-big">
+          <div class="icon-wrap" style="background:var(--blue-light);">
+            <span class="mi" style="font-size:2rem; color:var(--blue);">trending_up</span>
+          </div>
+          <h3>Ambition</h3>
+          <p>Nous voulons construire une agence de référence en Île-de-France, capable de répondre à tous les besoins en services à la personne avec excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTRE ACTIVITÉ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-img-split reverse" style="gap:60px; align-items:center;">
+
+        <div>
+          <span class="badge badge-blue" style="margin-bottom:16px;"><span class="mi mi-sm">apartment</span> Notre activité</span>
+          <h2>Déclaré Services à la Personne (SAP)</h2>
+          <p style="margin:16px 0;">
+            DoneServicesPlus est officiellement déclaré en <strong>Services à la Personne</strong>,
+            conformément à la législation française. Cette déclaration garantit :
+          </p>
+          <ul class="service-list">
+            <li>L'éligibilité au crédit d'impôt de 50 % pour tous nos clients</li>
+            <li>Le respect du cadre légal et des droits des travailleurs</li>
+            <li>La sécurité juridique pour vous et votre famille</li>
+            <li>La possibilité d'utiliser l'avance immédiate URSSAF</li>
+            <li>Un interlocuteur officiel reconnu par l'État</li>
+          </ul>
+          <div class="info-box" style="margin-top:20px;">
+            <p><span class="mi mi-sm">info</span> Notre numéro de déclaration SAP est disponible sur simple demande et figure sur toutes nos factures.</p>
+          </div>
+        </div>
+
+        <div class="section-img-wrap">
+          <img src="assets/images/une%20jeune%20femme%20noire%20donne%20%C3%A0%20manger%20une%20jeune%20femme.jpg"
+               alt="Auxiliaire de vie DoneServicesPlus accompagnement repas"
+               loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-sm" style="background:var(--orange); padding:60px 0;">
+    <div class="container" style="text-align:center;">
+      <h2 style="color:white; margin-bottom:12px;">Vous voulez en savoir plus ?</h2>
+      <p style="color:rgba(255,255,255,.85); margin-bottom:28px; max-width:480px; margin-left:auto; margin-right:auto;">Contactez-nous pour discuter de vos besoins ou pour un premier devis gratuit. Nous sommes à votre écoute.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+        <a href="devis.html" class="btn" style="background:white; color:var(--orange);">Devis gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><div class="logo-icon">D</div><div class="logo-text"><span class="logo-name">DoneServicesPlus</span><span class="logo-tagline">Services à domicile</span></div></div>
+          <p class="footer-desc">Agence de services à domicile spécialisée en aide ménagère et auxiliaire de vie. Basés à Achères, nous intervenons dans toute l'Île-de-France.</p>
+          <div class="footer-contact-item"><span class="mi mi-sm">phone</span><a href="tel:+33652736960">06 52 73 69 60</a></div>
+          <div class="footer-contact-item"><span class="mi mi-sm">mail</span><a href="mailto:doneservicesplus.com@gmail.com">doneservicesplus.com@gmail.com</a></div>
+          <div class="footer-contact-item"><span class="mi mi-sm">location_on</span><span>Achères, 78260 Yvelines</span></div>
+        </div>
+        <div class="footer-col"><h4>Nos services</h4><ul>
+          <li><a href="aide-menagere-acheres.html">Aide ménagère</a></li>
+          <li><a href="aide-menagere-acheres.html">Repassage</a></li>
+          <li><a href="auxiliaire-de-vie-acheres.html">Auxiliaire de vie</a></li>
+          <li><a href="auxiliaire-de-vie-acheres.html">Aide à la toilette</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Informations</h4><ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="zone-intervention-ile-de-france.html">Zone d'intervention</a></li>
+          <li><a href="credit-impot-50-services-personne.html">Crédit d'impôt</a></li>
+          <li><a href="recrutement.html">Recrutement</a></li>
+          <li><a href="devis.html">Devis gratuit</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Zones desservies</h4><p class="footer-villes">Achères, Conflans-Sainte-Honorine, Poissy, Saint-Germain-en-Laye, Maisons-Laffitte, Sartrouville, Argenteuil, Cergy et toute l'Île-de-France.</p></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 DoneServicesPlus — Tous droits réservés</p>
+        <div style="display:flex;gap:20px;"><a href="mentions-legales.html">Mentions légales</a><a href="mentions-legales.html#confidentialite">Confidentialité</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner">
+    <p>Ce site utilise des cookies pour analyser le trafic. <a href="mentions-legales.html#cookies">En savoir plus</a></p>
+    <button id="cookie-accept" class="btn btn-orange">J'accepte</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nos services à domicile en Île-de-France | DoneServicesPlus</title>
+  <meta name="description" content="Découvrez tous les services à domicile de DoneServicesPlus : aide ménagère, repassage, auxiliaire de vie, aide à la toilette, accompagnement et garde de nuit. Crédit d'impôt 50 %. Achères, Île-de-France.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://doneservicesplus.fr/nos-services.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .fade-in { opacity:0; transform:translateY(20px); transition:opacity .5s ease,transform .5s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+
+    .service-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      padding: 60px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-block:last-child { border-bottom: none; }
+    .service-block.reverse { direction: rtl; }
+    .service-block.reverse > * { direction: ltr; }
+
+    .service-block-img {
+      background: var(--blue-light);
+      border-radius: var(--radius);
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+    }
+    .service-block.menage .service-block-img {
+      background: var(--orange-light);
+    }
+
+    .service-block-text h2 {
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+    .service-block-text h2 span {
+      color: var(--blue);
+    }
+    .service-block.menage .service-block-text h2 span {
+      color: var(--orange);
+    }
+    .service-block-text p {
+      margin-bottom: 20px;
+    }
+    .service-block-text .btn {
+      margin-top: 8px;
+    }
+
+    .tarif-card {
+      background: var(--grey-light);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      border: 1px solid var(--border);
+    }
+    .tarif-card span { color: var(--grey); font-size:.9rem; }
+    .tarif-card strong { color: var(--dark); font-size:1rem; }
+    .tarif-card .apres { color: var(--orange); font-weight:700; }
+
+    @media (max-width: 768px) {
+      .service-block {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 0;
+      }
+      .service-block.reverse { direction: ltr; }
+      .service-block-img { height: 180px; }
+    }
+  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+  <link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">D</div>
+          <div class="logo-text">
+            <span class="logo-name">DoneServicesPlus</span>
+            <span class="logo-tagline">Services à domicile · Île-de-France</span>
+          </div>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="nos-services.html" class="active">Nos services</a>
+          <a href="zone-intervention-ile-de-france.html">Zone d'intervention</a>
+          <a href="credit-impot-50-services-personne.html">Crédit d'impôt</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+          <a href="devis.html" class="btn btn-orange">Devis gratuit</a>
+        </nav>
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <a href="index.html"><span class="mi mi-sm">home</span> Accueil</a>
+      <a href="nos-services.html" class="active"><span class="mi mi-sm">room_service</span> Nos services</a>
+      <a href="aide-menagere-acheres.html"><span class="mi mi-sm">cleaning_services</span> Aide ménagère</a>
+      <a href="auxiliaire-de-vie-acheres.html"><span class="mi mi-sm">favorite</span> Auxiliaire de vie</a>
+      <a href="zone-intervention-ile-de-france.html"><span class="mi mi-sm">location_on</span> Zone d'intervention</a>
+      <a href="credit-impot-50-services-personne.html"><span class="mi mi-sm">euro</span> Crédit d'impôt 50 %</a>
+      <a href="recrutement.html"><span class="mi mi-sm">work</span> Recrutement</a>
+      <a href="a-propos.html"><span class="mi mi-sm">info</span> À propos</a>
+      <a href="contact.html"><span class="mi mi-sm">call</span> Contact</a>
+      <a href="devis.html" class="btn btn-orange">Obtenir un devis gratuit</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>›</span>
+        <span>Nos services</span>
+      </nav>
+      <h1>Nos services à domicile</h1>
+      <p>Aide ménagère, auxiliaire de vie et accompagnement en Île-de-France — avec 50 % de crédit d'impôt sur toutes nos prestations.</p>
+    </div>
+  </section>
+
+  <!-- BANDEAU CRÉDIT -->
+  <div class="bandeau-impot">
+    <div class="container">
+      <p><span class="mi mi-sm">check_circle</span> Toutes nos prestations ouvrent droit au <strong>crédit d'impôt de 50 %</strong> — <a href="credit-impot-50-services-personne.html">En savoir plus →</a></p>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section-sm">
+    <div class="container" style="text-align:center; max-width:720px;">
+      <h2 style="margin-bottom:16px;">Deux pôles d'expertise complémentaires</h2>
+      <p style="font-size:1.05rem;">
+        DoneServicesPlus intervient sur deux domaines essentiels du service à la personne :
+        l'<strong>entretien du domicile</strong> et le <strong>soutien aux personnes âgées ou dépendantes</strong>.
+        Tous nos intervenants sont qualifiés, formés et bienveillants.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======= BLOC MÉNAGE ======= -->
+  <section class="section" style="background:var(--orange-light); border-top:3px solid var(--orange);">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="badge badge-orange"><span class="mi mi-sm">cleaning_services</span> Pôle Ménage & Entretien</span>
+        <h2 style="color:var(--orange);">Aide ménagère et entretien du domicile</h2>
+        <p>Un intérieur propre et ordonné, sans effort de votre part. Nos intervenants s'occupent de tout.</p>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <div class="card-icon card-icon-orange"><span class="mi">cleaning_services</span></div>
+          <h3>Ménage à domicile</h3>
+          <p>Nettoyage régulier ou ponctuel de votre intérieur. Sols, surfaces, sanitaires, cuisine — tout est pris en charge avec soin.</p>
+          <ul class="service-list">
+            <li>Nettoyage des sols (aspiration, lavage)</li>
+            <li>Dépoussiérage des surfaces</li>
+            <li>Nettoyage des sanitaires</li>
+            <li>Entretien de la cuisine</li>
+            <li>Aération et rangement</li>
+          </ul>
+          <div style="margin-top:20px;">
+            <div class="tarif-card">
+              <span>Tarif horaire</span>
+              <strong>25 €/h</strong>
+            </div>
+            <div class="tarif-card">
+              <span>Après crédit d'impôt 50 %</span>
+              <strong class="apres">12,50 €/h</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon-orange"><span class="mi">dry_cleaning</span></div>
+          <h3>Repassage</h3>
+          <p>Vos vêtements et votre linge de maison parfaitement entretenus. Un service soigné et rapide, directement chez vous.</p>
+          <ul class="service-list">
+            <li>Repassage de vêtements</li>
+            <li>Chemises et tenues délicates</li>
+            <li>Linge de lit et de bain</li>
+            <li>Pliage et rangement</li>
+            <li>Respect des matières</li>
+          </ul>
+          <div style="margin-top:20px;">
+            <div class="tarif-card">
+              <span>Tarif horaire</span>
+              <strong>25 €/h</strong>
+            </div>
+            <div class="tarif-card">
+              <span>Après crédit d'impôt 50 %</span>
+              <strong class="apres">12,50 €/h</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon-orange"><span class="mi">elderly_woman</span></div>
+          <h3>Aide ménagère seniors</h3>
+          <p>Un service d'entretien du domicile spécialement adapté aux personnes âgées ou à mobilité réduite, avec douceur et patience.</p>
+          <ul class="service-list">
+            <li>Entretien du logement</li>
+            <li>Aide à la préparation des repas</li>
+            <li>Petites courses à proximité</li>
+            <li>Lien social et présence</li>
+            <li>Intervenants bienveillants</li>
+          </ul>
+          <div style="margin-top:20px;">
+            <div class="tarif-card">
+              <span>Tarif horaire</span>
+              <strong>25 €/h</strong>
+            </div>
+            <div class="tarif-card">
+              <span>Après crédit d'impôt 50 %</span>
+              <strong class="apres">12,50 €/h</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:36px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="aide-menagere-acheres.html" class="btn btn-orange">En savoir plus sur l'aide ménagère</a>
+        <a href="devis.html?service=menage" class="btn btn-outline-blue">Simuler mon devis ménage</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= BLOC AUXILIAIRE ======= -->
+  <section class="section" style="background:var(--blue-light); border-top:3px solid var(--blue);">
+    <div class="container">
+
+      <div class="section-title">
+        <span class="badge badge-blue"><span class="mi mi-sm">favorite</span> Pôle Auxiliaire de vie</span>
+        <h2 style="color:var(--blue);">Accompagnement et aide aux personnes dépendantes</h2>
+        <p>Un soutien humain, qualifié et bienveillant pour les personnes âgées, malades ou en situation de handicap.</p>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="card">
+          <div class="card-icon card-icon-blue"><span class="mi">bathtub</span></div>
+          <h3>Aide à la toilette</h3>
+          <p>Assistance pour la toilette quotidienne dans le strict respect de la dignité de la personne. Professionnalisme et discrétion garantis.</p>
+          <ul class="service-list">
+            <li>Aide à la douche ou au bain</li>
+            <li>Aide à l'habillage et au déshabillage</li>
+            <li>Soins d'hygiène corporelle</li>
+            <li>Soins du visage et des cheveux</li>
+            <li>Respect total de la dignité</li>
+          </ul>
+          <div style="margin-top:20px;">
+            <div class="tarif-card">
+              <span>Tarif horaire</span>
+              <strong>30 €/h</strong>
+            </div>
+            <div class="tarif-card">
+              <span>Après crédit d'impôt 50 %</span>
+              <strong class="apres">15 €/h</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon-blue"><span class="mi">shopping_cart</span></div>
+          <h3>Accompagnement & courses</h3>
+          <p>Accompagnement lors des sorties, courses alimentaires, rendez-vous médicaux ou promenades. Sécurité et autonomie préservées.</p>
+          <ul class="service-list">
+            <li>Accompagnement aux courses</li>
+            <li>Transport aux rendez-vous médicaux</li>
+            <li>Promenades et sorties</li>
+            <li>Aide aux démarches administratives</li>
+            <li>Présence rassurante</li>
+          </ul>
+          <div style="margin-top:20px;">
+            <div class="tarif-card">
+              <span>Tarif horaire</span>
+              <strong>30 €/h</strong>
+            </div>
+            <div class="tarif-card">
+              <span>Après crédit d'impôt 50 %</span>
+              <strong class="apres">15 €/h</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon card-icon-blue"><span class="mi">nightlight</span></div>
+          <h3>Garde de nuit</h3>
+          <p>Une présence nocturne pour sécuriser les personnes nécessitant une surveillance continue. Tranquillité d'esprit pour toute la famille.</p>
+          <ul class="service-list">
+            <li>Présence nocturne continue</li>
+            <li>Aide aux levers et couchés</li>
+            <li>Surveillance et sécurité</li>
+            <li>Aide en cas d'urgence</li>
+            <li>Rapport de nuit si besoin</li>
+          </ul>
+          <div style="margin-top:20px;">
+            <div class="tarif-card">
+              <span>Tarif horaire</span>
+              <strong>30 €/h</strong>
+            </div>
+            <div class="tarif-card">
+              <span>Après crédit d'impôt 50 %</span>
+              <strong class="apres">15 €/h</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:36px; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="auxiliaire-de-vie-acheres.html" class="btn btn-blue">En savoir plus sur l'auxiliaire de vie</a>
+        <a href="devis.html?service=auxiliaire" class="btn btn-outline-blue">Simuler mon devis</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CRÉDIT D'IMPÔT RAPPEL -->
+  <section class="section" style="background:var(--grey-light);">
+    <div class="container">
+      <div class="credit-block">
+        <div>
+          <span class="badge badge-orange" style="margin-bottom:16px;"><span class="mi mi-sm">euro</span> Avantage fiscal</span>
+          <h2>50 % de crédit d'impôt sur toutes nos prestations</h2>
+          <p>DoneServicesPlus est déclaré en Services à la Personne (SAP). Toutes nos prestations — ménage, repassage, auxiliaire de vie — ouvrent droit au crédit d'impôt de 50 %.</p>
+          <p style="margin-top:12px;">Avec l'avance immédiate, vous bénéficiez de la réduction directement sur vos factures, sans attendre votre déclaration d'impôts.</p>
+          <div style="margin-top:28px; display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="credit-impot-50-services-personne.html" class="btn btn-orange">Tout savoir sur le crédit d'impôt</a>
+            <a href="devis.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:rgba(255,255,255,0.9);">Calculer mon devis</a>
+          </div>
+        </div>
+        <div class="credit-example">
+          <h3>Exemple : ménage hebdomadaire</h3>
+          <div class="credit-line">
+            <span>4h de ménage / semaine × 4 semaines</span>
+            <strong>400 €</strong>
+          </div>
+          <div class="credit-line">
+            <span>Crédit d'impôt 50 %</span>
+            <strong style="color:var(--orange);">— 200 €</strong>
+          </div>
+          <div class="credit-final">
+            <span>Vous payez réellement</span>
+            <strong>200 €/mois</strong>
+          </div>
+          <p style="margin-top:16px; font-size:0.8rem; color:rgba(255,255,255,0.5);">Estimation indicative, sous réserve d'éligibilité fiscale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DEVIS -->
+  <section class="section-sm">
+    <div class="container" style="text-align:center;">
+      <h2 style="margin-bottom:12px;">Prêt à démarrer ?</h2>
+      <p style="margin-bottom:28px;">Utilisez notre simulateur pour obtenir une estimation immédiate du coût de votre service, avant et après crédit d'impôt.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="devis.html" class="btn btn-orange">Calculer mon devis gratuit</a>
+        <a href="tel:+33652736960" class="btn btn-outline-blue"><span class="mi mi-sm">call</span> Nous appeler</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <div class="logo-icon">D</div>
+            <div class="logo-text">
+              <span class="logo-name">DoneServicesPlus</span>
+              <span class="logo-tagline">Services à domicile</span>
+            </div>
+          </div>
+          <p class="footer-desc">Agence de services à domicile spécialisée en aide ménagère et auxiliaire de vie. Basés à Achères, nous intervenons dans toute l'Île-de-France.</p>
+          <div class="footer-contact-item"><span class="mi mi-sm">call</span><a href="tel:+33652736960">06 52 73 69 60</a></div>
+          <div class="footer-contact-item"><span class="mi mi-sm">mail</span><a href="mailto:doneservicesplus.com@gmail.com">doneservicesplus.com@gmail.com</a></div>
+          <div class="footer-contact-item"><span><span class="mi">location_on</span></span><span>Achères, 78260 Yvelines</span></div>
+        </div>
+        <div class="footer-col">
+          <h4>Nos services</h4>
+          <ul>
+            <li><a href="aide-menagere-acheres.html">Aide ménagère</a></li>
+            <li><a href="aide-menagere-acheres.html">Ménage à domicile</a></li>
+            <li><a href="aide-menagere-acheres.html">Repassage</a></li>
+            <li><a href="auxiliaire-de-vie-acheres.html">Auxiliaire de vie</a></li>
+            <li><a href="auxiliaire-de-vie-acheres.html">Aide à la toilette</a></li>
+            <li><a href="auxiliaire-de-vie-acheres.html">Garde de nuit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="a-propos.html">À propos de nous</a></li>
+            <li><a href="zone-intervention-ile-de-france.html">Zone d'intervention</a></li>
+            <li><a href="credit-impot-50-services-personne.html">Crédit d'impôt 50 %</a></li>
+            <li><a href="recrutement.html">Recrutement</a></li>
+            <li><a href="devis.html">Devis gratuit</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Zones desservies</h4>
+          <p class="footer-villes">Achères, Conflans-Sainte-Honorine, Poissy, Saint-Germain-en-Laye, Maisons-Laffitte, Sartrouville, Argenteuil, Cergy, Pontoise, Versailles et toute l'Île-de-France.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 DoneServicesPlus — Tous droits réservés</p>
+        <div style="display:flex; gap:20px;">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="mentions-legales.html#confidentialite">Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner">
+    <p>Ce site utilise des cookies pour analyser le trafic et améliorer votre expérience. <a href="mentions-legales.html#cookies">En savoir plus</a></p>
+    <button id="cookie-accept" class="btn btn-orange">J'accepte</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
