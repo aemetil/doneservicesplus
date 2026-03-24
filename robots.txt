@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://doneservicesplus.fr/sitemap.xml
+Sitemap: https://doneservicesplus.com/sitemap.xml
 
 # Disallow admin/private paths (none currently, but future-proofing)
 # Disallow: /admin/
